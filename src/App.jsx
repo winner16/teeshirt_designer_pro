@@ -1,10 +1,19 @@
-import React from "react";
-import Routes from "./Routes";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-function App() {
-  return (
-    <Routes />
-  );
-}
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
 
-export default App;
+  useEffect(() => {
+    // Scroll to top smoothly if supported
+    if ("scrollBehavior" in document.documentElement.style) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
+
+  return null;
+};
+
+export default ScrollToTop;
