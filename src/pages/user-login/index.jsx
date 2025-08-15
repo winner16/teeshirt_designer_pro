@@ -115,7 +115,7 @@ const UserLogin = () => {
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     Rejoignez plus de 10,000 designers qui utilisent notre plateforme 
-                    pour créer des t-shirts à succès et générer des revenus en ligne.
+                    pour créer des t-shirts à succès et développer votre activité en ligne.
                   </p>
                 </div>
 
